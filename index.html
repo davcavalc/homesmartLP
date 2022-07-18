@@ -5,29 +5,43 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + TS</title>
+  <title>Homesmart</title>
 </head>
 
 <body class="max-w-[2000px] mx-auto text-neutral-900 dark:text-neutral-200 bg-white dark:bg-neutral-800">
 
   <nav class="mx-auto p-4 bg-amber-400">
-    <figure>
-      <a href="/">
-        <img src="/assets/logo.svg" alt="Homesmart logo">
+    <div class="container mx-auto flex items-center justify-between">
+      <a href="/" class="link" aria-label="Go to homepage">
+        <img src="/assets/logo.svg" width="200" class="w-48 md:w-64 lg:w-72" alt="Homesmart logo">
       </a>
-    </figure>
+      <button id="menu" class="link2 btn" aria-expanded="false" aria-label="Open Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="menubar hidden" role="menubar">
+      <a href="/" class="menuitem" role="menuitem">Home</a>
+      <a href="/" class="menuitem lg:mr-auto" role="menuitem">Contact</a>
+      <a href="/" class="menuitem" role="menuitem">Login</a>
+      <a href="/" class="signup" role="menuitem">Sign Up</a>
+    </div>
   </nav>
 
-  <button>
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-      stroke-width="2">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  </button>
+  <header class="relative pt-16 md:pt-24 lg:pt-48">
+    <div class="div-header"></div>
+    <div class="container mx-auto grid grid-rows-1 place-items-end px-2">
+      <img src="./assets/couch.png" class="img-header" alt="Couch">
+      <img src="./assets/app.svg" class="img-header w-40 sm:w-52 md:w-64 lg:w-72" alt="App">
+    </div>
+  </header>
 
 
 
-  <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>

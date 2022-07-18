@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* NAVBAR */
+
+.link {
+ @apply focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-9 z-50 hover:opacity-75 transition-opacity;
+}
+
+.link2 {
+ @apply focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400;
+}
+
+.btn {
+ @apply lg:hidden text-neutral-900 hover:text-neutral-600 transition-colors;
+}
+
+.menubar {
+ @apply flex-col gap-4 absolute right-0 left-0 top-16 bg-amber-400 shadow-xl text-center text-lg p-6 items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full;
+}
+
+.menuitem {
+ @apply py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors font-semibold;
+}
+
+.signup {
+ @apply py-2 px-6 bg-teal-900 text-white shadow-xl hover:shadow-none transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400 font-semibold;
+}
+
+/* HEADER */
+
+.div-header {
+ @apply absolute inset-0 bottom-8 md:bottom-24 xl:bottom-32 -z-10 bg-gradient-to-b from-amber-400 to-amber-600;
+}
+
+.img-header {
+ @apply row-start-1 row-end-2 col-start-1 col-end-2 mx-auto;
+}
