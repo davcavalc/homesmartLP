@@ -17,7 +17,7 @@
 }
 
 .menubar {
- @apply flex-col gap-4 absolute right-0 left-0 top-16 bg-amber-400 shadow-xl text-center text-lg p-6 items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full;
+ @apply flex-col gap-4 absolute z-40 right-0 left-0 top-16 bg-amber-400 shadow-xl text-center text-lg p-6 items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full;
 }
 
 .menuitem {
@@ -36,4 +36,9 @@
 
 .img-header {
  @apply row-start-1 row-end-2 col-start-1 col-end-2 mx-auto;
+}
+
+/* MAIN */
+.download {
+    @apply py-2 px-6 bg-amber-400 dark:text-neutral-900 mx-auto my-12 flex gap-2 shadow-xl hover:shadow-none transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark:ring-offset-neutral-800 font-bold shadow-amber-400;
 }
