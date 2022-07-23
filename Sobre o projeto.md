@@ -6,5 +6,6 @@ Construção da página de vendas do "Homesmart".
 
 Davner Firmino Cavalcante
 
-## Vídeo do layout
+## Gif do layout
 
+![gif do layout](./assets/Homesmart%20-%20Google%20Chrome%202022-07-23%2003-19-05.gif)
