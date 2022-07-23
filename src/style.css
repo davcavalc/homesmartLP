@@ -60,6 +60,20 @@
 .cta-section {
  @apply py-2 px-6 bg-amber-400 dark:text-neutral-900 flex gap-2 shadow-xl transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark:ring-offset-neutral-800 font-bold hover:shadow-amber-400;
 }
+
+/* FORM SECTION */
 .form-section {
  @apply py-2 px-6 bg-amber-400 dark:text-neutral-900 w-max mx-auto mt-12 md:mb-12 flex gap-2 shadow-xl transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark:ring-offset-neutral-800 font-bold hover:shadow-amber-400;
+}
+
+.input {
+ @apply form-input w-full border-4 border-amber-400 rounded-md focus:ring-4 dark:focus:ring-offset-2 focus:ring-amber-400 focus:border-amber-400 focus:outline-none dark:bg-amber-400 dark:text-neutral-900 placeholder-transparent;
+}
+
+.label {
+ @apply text-neutral-500 text-sm font-bold uppercase absolute -top-4 left-2 -translate-y-1/2 transition-all;
+}
+
+.signup-btn-form {
+ @apply py-2 px-6 bg-neutral-900 text-white w-max shadow-xl hover:shadow-none transition-shadow focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-white dark:ring-offset-amber-400 font-semibold;
 }
